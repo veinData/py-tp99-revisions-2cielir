@@ -15,12 +15,31 @@ TAILLE = 8
 matrice = []
 # TODO : pour chaque ligne, construire une liste de TAILLE zeros
 #        puis l'ajouter a matrice avec .append()
+for i in range(TAILLE):
+    matrice.append([])
+    for j in range(TAILLE):
+        matrice[i].append(".")
+
 
 
 # --- 2. affichage ---
 # TODO : deux boucles imbriquees ; on construit une chaine texte pour
 #        la ligne courante, puis on l'affiche avec print(texte)
 
+for i in range(TAILLE):
+    for j in range(TAILLE):
+        print(matrice[i][j],end=" ")
+    print()
+
 
 # --- 3. allumage de deux LED puis nouvel affichage ---
 # TODO
+
+matrice[0][0]='#'
+matrice[TAILLE-1][TAILLE-1]='#'
+
+
+for i in range(TAILLE):
+    for j in range(TAILLE):
+        print(matrice[i][j],end=" ")
+    print()
