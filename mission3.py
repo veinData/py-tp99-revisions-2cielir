@@ -11,7 +11,14 @@ TAILLE = 8
 
 # --- creation de la barre eteinte ---
 barre = []
+
 # TODO
+
+for j in range(TAILLE):
+    barre.append(".")
+
+
+
 
 
 # --- aller ---
@@ -19,5 +26,24 @@ barre = []
 #        puis afficher la barre
 
 
+
+
 # --- retour ---
 # TODO : meme chose, mais avec un range() qui compte a l'envers
+
+n=1
+for i in range(TAILLE):
+    for a in range(TAILLE):
+            
+
+            if j==n :
+                barre[n] = '#'
+                print(barre[j],end=" ")
+
+            else : 
+                print(barre[j],end=" ")
+
+            n = n+1
+
+
+    print()
