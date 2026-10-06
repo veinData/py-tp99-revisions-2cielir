@@ -19,8 +19,8 @@ for i in range(TAILLE):
         ligne.append(0)
     matrice.append(ligne)
 
-# TODO : allumer les LED du pourtour
-#        (premiere ligne, derniere ligne, premiere colonne, derniere colonne)
+
+
 
 
 for i in range(TAILLE):
@@ -30,7 +30,18 @@ for i in range(TAILLE):
             texte = texte + "# "
         else:
             texte = texte + ". "
+       
+    
     print(texte)
+
+
+
+
+
+
+
+
+
 
 # ---------- Figure 2 : la croix diagonale ----------
 matrice = []

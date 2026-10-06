@@ -7,43 +7,55 @@
 #   - retour : de la LED 6 jusqu'a la LED 1   (6 affichages)
 # Chaque etape est affichee sur une ligne, comme en mission 2.
 
+
+
 TAILLE = 8
 
 # --- creation de la barre eteinte ---
 barre = []
-
 # TODO
-
 for j in range(TAILLE):
     barre.append(".")
-
-
-
-
 
 # --- aller ---
 # TODO : pour chaque position, tout eteindre, allumer la bonne LED,
 #        puis afficher la barre
+for j in range(TAILLE):
+    for i in range(TAILLE):
+        barre[i]='.'
+    
+    barre[j]='#'
 
-
-
-
-# --- retour ---
-# TODO : meme chose, mais avec un range() qui compte a l'envers
-
-n=1
-for i in range(TAILLE):
     for a in range(TAILLE):
-            
-
-            if j==n :
-                barre[n] = '#'
-                print(barre[j],end=" ")
-
-            else : 
-                print(barre[j],end=" ")
-
-            n = n+1
-
-
+        print(barre[a],end=' ')
     print()
+
+
+
+
+
+
+
+for j in range(TAILLE-2,0,-1):
+    for i in range(TAILLE):
+        barre[i]='.'
+    
+    barre[j]='#'
+
+    for a in range(TAILLE):
+        print(barre[a],end=' ')
+    print()
+
+
+
+
+
+#   for j in reversed(range(TAILLE-1)):
+#       for i in range(TAILLE):
+#           barre[i]='.'
+#       
+#       barre[j]='#'
+#   
+#       for a in range(TAILLE):
+#           print(barre[a],end=' ')
+#       print()
